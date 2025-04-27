@@ -259,15 +259,3 @@ def credits():
     print("Neural Networks test")
     print("Activation Function : Sigmoïd\n")
 #==============================
-
-if __name__ == "__main__":
-    credits()
-    a = input("1 - Create a new DNN\n2 - Load a DNN")
-    if a == "1":
-        nn = new_network(input("How many input neurons >>> "), input("How many neurons in a single hidden layer >>> "), input("How many hidden layers >>> "), input("How many ouput neurons >>> "))
-        save(nn, (input("DNN name >>> ")+".nna"))
-        a = input("1 - Train the DNN\n2 - Use the DNN")
-        if a == "1":
-            train(nn)
-        elif a == "2":
-            predict(nn, ())
