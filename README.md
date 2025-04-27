@@ -14,4 +14,4 @@ e = input neurons / h = How many hidden layers / m = How many neurons in earch h
 wa = weight between the input layer and the first hidden layer (on commence par le premier neuronne d'entrée avec le 1er caché, puis le 2nd caché, ...) /
 wh = weight between all the hidden layers (1 groupe entre la 1er et 2nd couche, 2 grp entre la 2nd et 3eme, ... (mm systeme que wa)) / 
 wo = weight between the last hidden layer and the ouput layer (mm systeme que wa)
-## Défaults :
+## Defaults :
