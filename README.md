@@ -1,17 +1,16 @@
 # Deep Neural Network Test
 ## V1.0 Beta 3
 ### Made by [abgache](https://abgache.pro/)
-Activation Function : _Sigmoïd_
-
-## Saving system
+Foncion d'activation : _Sigmoïd_
+fonction de perte: _MSE_
+## Système de sauvegarde
 **Filetype** : _".nna"_
-**Format ** : json encoded with base64
+**Format ** : json encodé en base64
 ### Json Format : 
-list = [(4, 2, 5, 3), (0.5, 0, 1, ...), ((0.45, 1, 0.78, ...), (0.97, 0, 0.2)), (1, 0.12, ...)]
-        ^  ^  ^  ^        ^^^                       ^^^^^^^^^^^^                    ^^^
-        e  h  m  l         wa                            wh                          wo
-e = input neurons / h = How many hidden layers / m = How many neurons in earch hidden layer / l = output neurons / 
-wa = weight between the input layer and the first hidden layer (on commence par le premier neuronne d'entrée avec le 1er caché, puis le 2nd caché, ...) /
-wh = weight between all the hidden layers (1 groupe entre la 1er et 2nd couche, 2 grp entre la 2nd et 3eme, ... (mm systeme que wa)) / 
-wo = weight between the last hidden layer and the ouput layer (mm systeme que wa)
+dnn: list = [(4, 2, 5, 3), (0.5, 0, 1, ...), ((0.45, 1, 0.78, ...), (0.97, 0, 0.2)), (1, 0.12, ...)]
+La première partie contient les paramètres du réseau, dans le cas présent, 4 est le nombre de neuronnes d'entrée, 2 le nombre de couches cachées, 5 la densité en neuronnes de chaque couche caché et 3 le nombre de neuronnes de sorties.
+La seconde contient, en ordre, le poid entre la couche d'entrée et la première couche caché. 
+La troisième est une liste de listes des poids entre toutes les couches cachées et finalement, la quatrième et dernière partie contient le poid entre la dernière couche caché et la couche de sortie.
 ## Defaults :
+ - Aucune variations de quantitées de neuronnes dans les couches cachées  n'est possible.
+ - Aucun changement de Fonction d'activation ou de Fonction de perte n'est possible.
