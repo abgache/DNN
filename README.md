@@ -5,7 +5,7 @@ Foncion d'activation : _Sigmoïd_
 fonction de perte: _MSE_
 ## Système de sauvegarde
 **Filetype** : _".nna"_
-**Format ** : json encodé en base64
+**Format** : json encodé en base64
 ### Json Format : 
 dnn: list = [(4, 2, 5, 3), (0.5, 0, 1, ...), ((0.45, 1, 0.78, ...), (0.97, 0, 0.2)), (1, 0.12, ...)]                                                                                                                     
 La première partie contient les paramètres du réseau, dans le cas présent, 4 est le nombre de neurones d'entrée, 2 le nombre de couches cachées, 5 la densité en neurones de chaque couche cachée et 3 le nombre de neurones de sortie.
